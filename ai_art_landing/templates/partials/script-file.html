@@ -1,0 +1,12 @@
+<!-- JAVASCRIPTS -->
+<script src="{{ static_url_for('static', 'dist/libs/tiny-slider/min/tiny-slider.js') }}"></script>
+<script src="{{ static_url_for('static', 'dist/libs/tobii/js/tobii.min.js') }}"></script>
+<script src="{{ static_url_for('static', 'dist/libs/feather-icons/feather.min.js') }}"></script>
+<script src="{{ static_url_for('static', 'dist/js/plugins.init.js') }}"></script>
+<script src="{{ static_url_for('static', 'dist/js/app.js') }}"></script>
+
+<!---->
+{% for url in INCLUDED_JS %}
+<script src="{{ static_url_for('static', url) }}"></script>
+{% endfor %}
+<!---->

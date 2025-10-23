@@ -1,0 +1,47 @@
+# Created by .ignore support plugin (hsz.mobi)
+# exclude everything
+.DS_Store*
+
+data/txn/*.csv
+logs/*
+data/*
+img/*.png
+output/*
+
+
+# exception to the rule
+!logs/.gitkeep
+
+# LeaderBoard/**/*.pth
+# dotenv
+.env
+
+
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# virtualenv
+venv/
+ENV/
+
+# node.js
+node_modules
+
+.idea
+.vscode

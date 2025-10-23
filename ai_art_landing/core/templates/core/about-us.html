@@ -1,0 +1,73 @@
+{% extends "base.html" %} {% block scripts %}
+<script src="{{ static_url_for('static', 'js/index.js') }}"></script>
+{% endblock %} {% block page %}
+
+
+        <!-- Start Hero -->
+        <section style="background-image: url('static/images/company/aboutus.jpg');" class="relative table w-full py-32 lg:py-40 bg-gray-50 dark:bg-slate-800 bg-no-repeat bg-center bg-cover">
+            <div class="absolute inset-0 bg-black opacity-75"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 text-center mt-10">
+                    <h3 class="text-3xl leading-normal font-semibold">About us</h3>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+                <ul class="tracking-[0.5px] mb-0 inline-block">
+                    <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><a href="https://aiart.io">AI Art</a></li>
+                    <li class="inline-block text-base text-slate-950 dark:text-white mx-0.5 ltr:rotate-0 rtl:rotate-180"><i class="uil uil-angle-right-b"></i></li>
+                    <li class="inline-block uppercase text-[13px] font-bold text-indigo-600" aria-current="page">About Us</li>
+                </ul>
+            </div>
+        </section><!--end section-->
+        <div class="relative">
+            <div class="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white dark:text-slate-900">
+                <svg class="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start About us -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="md:flex justify-center">
+                    <div class="md:w-3/4">
+                        <div class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md">
+                            <p class="text-slate-400">
+                                Welcome to our company, a pioneer in the integration of artificial intelligence and cryptocurrency trading. Our mission is to revolutionize the trading landscape through innovative AI-driven solutions, providing both novice and experienced traders with powerful tools to maximize their investment potential.
+                            </p>
+
+                            <h5 class="text-xl font-semibold mb-4 mt-10">Crypto Quantitative Trading <a id="quant_trading"> #</a></h5>
+                            <p class="font-semibold mb-1">For Fund Manager</p>
+                            <p class="text-slate-400">
+                                At the heart of our company lies our expertise in Crypto Quantitative Trading. Utilizing cutting-edge AI technology, we develop sophisticated trading models tailored specifically for the dynamic world of cryptocurrency. Similar to how ChatGPT excels in language processing, our proprietary models are designed to create robust and adaptive trading strategies, ensuring optimal performance and returns in the ever-evolving crypto market.
+                            </p>
+
+                            <h5 class="text-xl font-semibold mb-4 mt-10">AI Art Trading Bot, aka. AI Hedge Project</h5>
+                            <p class="font-semibold mb-1">For App Users</p>
+                            <p class="text-slate-400">
+                                Our AI Art Trading Bot is crafted for users seeking a reliable and long-term investment solution. This intuitive trading bot harnesses our advanced trading strategies to generate consistent profits, offering a passive income stream for those with busy lifestyles. Perfect for individuals with day jobs who aspire to secure their financial future, our AIArt Trade Bot simplifies the complexities of trading, allowing users to invest with confidence and ease.
+                            </p>
+
+                            <h5 class="text-xl font-semibold mb-4 mt-10">AI Art High Frequency Trading<a id="HFT_trading"> #</a></h5>
+                            <p class="font-semibold mb-1">For Fund Manager & App Users</p>
+                            <p class="text-slate-400">
+                                Our newest division, AI Art High Frequency Trading, represents the pinnacle of our technological advancements. Here, we push the boundaries of trading efficiency by leveraging our extensive knowledge and expertise to enhance trading frequency. This high-speed trading approach enables us to capitalize on market opportunities with precision and agility, driving superior results for our clients.
+                            </p>
+
+                            <p class="text-slate-400 mt-12">
+                                At our company, we are committed to delivering innovative and effective trading solutions, empowering our users to achieve financial success in the world of cryptocurrency. Join us on this exciting journey and discover the future of trading today.
+                            </p>
+
+
+                        </div>
+                    </div><!--end -->
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Terms & Conditions -->
+
+
+{% endblock %}

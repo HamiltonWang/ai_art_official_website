@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title> AI Art - Create passive income for better life</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="AI Art Trading Bot that helps you to achieve passive income">
+        <meta name="keywords" content="cryptocurrency, nft marketplace, bitcoin, BTC, ETH">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="{{ static_url_for('static', 'favicon.ico') }}">
+        <link rel="icon" type="image/png" href="{{ static_url_for('static', 'favicon.ico') }}">
+
+        <!--<link href="static/libs/tiny-slider/tiny-slider.css" rel="stylesheet">-->
+
+        <!--<link
+                rel="stylesheet"
+                type="text/css"
+                href="{{ static_url_for('static', 'bundle.min.css' ) }}"
+        />
+        <link
+                rel="stylesheet"
+                type="text/css"
+                href="{{ static_url_for('static', 'css/base.css' ) }}"
+        />-->
+        {% for url in INCLUDED_CSS %}
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="{{ static_url_for('static', url ) }}"
+        />{% endfor %} {% block styles %}{% endblock %}
+        <style>
+          @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url("{{ static_url_for('static', 'fonts/materialdesignicons-webfont.woff2') }}")
+              format('woff2');
+          }
+        </style>
+
+        <!-- JAVASCRIPT -->
+        <!--<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>-->
+
+        <!-- Pico.css -->
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />-->
+
+    </head>
+    <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+
+        {% include "partials/nav-center.html" %}
+        {% block page %}{% endblock %}
+
+        {% include "partials/footer-transparent.html" %}
+        {% include "partials/cookies.html" %}
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 size-9 text-center bg-indigo-600 text-white leading-9"><i class="uil uil-arrow-up"></i></a>
+        <!-- Back to top -->
+
+        <!--<script src="{{ static_url_for('static', 'libs/tiny-slider/min/tiny-slider.js') }}"></script>-->
+        <!--<script src="{{ static_url_for('static', 'libs/feather-icons/feather.min.js') }}"></script>-->
+
+        {% include("partials/script-file.html") %}
+        <!-- JAVASCRIPT -->
+
+    </body>
+</html>

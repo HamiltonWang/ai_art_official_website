@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  ai_art_landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:5000"  # Change the port mapping as needed
+    environment:
+      - APP_MODE=Development  # Set the APP_MODE environment variable if needed, use Portaner tag+DroneCI
+    restart: always  # Restart the container always (optional)

@@ -1,0 +1,337 @@
+{% extends "base.html" %} {% block scripts %}
+<script src="{{ static_url_for('static', 'js/index.js') }}"></script>
+{% endblock %} {% block page %}
+
+
+
+        <!-- Start Hero -->
+        <section class="relative table w-full lg:py-40 md:py-36 pt-36 pb-24 overflow-hidden bg-white dark:bg-slate-900">
+            <div  style="background-image: url('static/images/overlay.png');" class="absolute inset-0 bg-repeat opacity-10 dark:opacity-60"></div>
+            <div class="container relative z-1">
+                <div class="relative grid lg:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
+                    <div class="lg:col-span-7">
+                        <div class="lg:me-6 lg:text-start text-center">
+                            <h1 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5">Access powerful AI <br>For <span class="typewrite bg-gradient-to-tl to-indigo-600 from-red-600 text-transparent bg-clip-text" data-period="2000" data-type='[ "Crypto Trading", "Automated Trade", "Better Portfolio", "Better Life" ]'> <span class="wrap"></span> </span></h1>
+                            <p class="text-lg max-w-xl lg:ms-0 mx-auto">Still trading manually? Missing out opportunities while you sleep? Gain financial independence through AI Art Trading Bot.</p>
+
+                            <div class="mt-8">
+                                <a href="#tradebot_demo_sect" class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Find out more <i class="mdi mdi-arrow-right align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="lg:col-span-5">
+                        <div class="relative after:content-[''] after:absolute lg:after:-top-0 after:-top-10 after:-right-32 after:size-[36rem] after:border-2 after:border-dashed after:border-slate-300 dark:after:border-slate-700 after:rounded-full after:animate-[spin_120s_linear_infinite] after:-z-1 before:content-[''] before:absolute lg:before:-top-24 before:-top-36 before:-right-56 before:size-[48rem] before:border-2 before:border-dashed before:border-slate-200 dark:before:border-slate-700 before:rounded-full before:animate-[spin_240s_linear_infinite] before:-z-1">
+                            <div class="relative after:content-[''] after:absolute lg:after:-top-0 after:-top-10 after:-right-40 after:size-[36rem] after:bg-gradient-to-tl after:to-indigo-600/30  after:from-red-600/30 dark:after:to-indigo-600/50 dark:after:from-red-600/50 after: after:blur-[200px] after:rounded-full after:-z-1">
+                                <img src="https://aihedge.finance/images/main-banner1.png" class="lg:max-w-none lg:ms-14" alt="">
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Hero -->
+
+
+<!-- Start -->
+    <section class="relative overflow-hidden table w-full bg-slate-50 dark:bg-slate-800 py-28 lg:py-36" id="tradebot_demo_sect">
+    <div class="container relative">
+        <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center mt-10 gap-[30px]">
+            <div class="lg:col-span-5">
+                <div class="md:me-6 relative z-2">
+                    <h4 class="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">
+                        Best way to make passive Crypto Income
+                    </h4>
+                    <p class="text-slate-400 text-lg max-w-xl">
+                        Launch your crypto campaign and unlock the power of AI to supercharge your investments.
+                    </p>
+
+                    <div class="mt-5">
+                        <a href="#performance_chart_section" class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-amber-500 hover:text-amber-500 after:bg-amber-500 duration-500 ease-in-out">Discover the future today <i class="uil uil-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="lg:col-span-7">
+                <div class="relative">
+                    <img src="{{ static_url_for('static', 'images/app/classic01.png') }}" class="mx-auto relative z-1" alt="">
+                    <div class="overflow-hidden absolute md:size-[550px] size-[400px] bg-slate-200/40 dark:bg-slate-900/40 bottom-1/2 translate-y-1/2 start-0 end-0 mx-auto z-0 rounded-full"></div>
+
+                    <div class="md:w-72 w-64 absolute md:-top-4 top-0 lg:start-0 md:-start-14 start-0 z-2">
+                        <div class="p-5 bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800">
+                            <h5 class="text-lg font-semibold mb-2">Your Funds</h5>
+                            <span class="text-2xl font-bold">$ 48,756.55</span>
+
+                            <img src="{{ static_url_for('static', 'images/payments/fund.png') }}" class="rounded-md mt-5" alt="">
+                        </div>
+                    </div>
+
+                    <div class="md:w-[350px] w-72 absolute top-1/3 start-1/2 ltr:-translate-x-1/2 rtl:translate-x-1/2 z-3">
+                        <div class="p-5 bg-indigo-600 rounded-md shadow dark:shadow-gray-800">
+                            <i class="mdi mdi-qrcode bg-clip-text text-[45px]"></i>
+
+                            <div class="pt-5">
+                                <h5 class="text-lg font-bold text-white">Address: FJIGG •••• •••• KSHSL</h5>
+                                <div class="flex justify-between text-slate-50 mt-4">
+                                    <p>Calvin Carlo</p>
+                                    <span>Exp: <span>01/24</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-64 absolute md:-bottom-4 bottom-0 end-0 z-3">
+                        <div class="p-5 bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800">
+                            <h5 class="font-semibold text-lg">Recent Transactions</h5>
+
+                            <ul>
+                                <li class="flex justify-between items-center pt-5">
+                                    <div class="flex items-center">
+                                        <img src="{{ static_url_for('static', 'images/crypto/coin/bitcoin.png') }}" class="w-10" alt="">
+
+                                        <div class="ms-3">
+                                            <p class="font-semibold">Bitcoin BTC</p>
+                                            <p class="text-slate-400 text-sm">Dt.1st Dec 24</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <span class="text-slate-400">$ 20.21</span>
+                                    </div>
+                                </li>
+
+                                <li class="flex justify-between items-center pt-5">
+                                    <div class="flex items-center">
+                                        <img src="{{ static_url_for('static', 'images/crypto/coin/ethereum.png') }}" class="w-10" alt="">
+
+                                        <div class="ms-3">
+                                            <p class="font-semibold">Ethereum ETH</p>
+                                            <p class="text-slate-400 text-sm">Dt.29th Nov 24</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <span class="text-slate-400">$ 59.00</span>
+                                    </div>
+                                </li>
+
+                                <li class="flex justify-between items-center pt-5">
+                                    <div class="flex items-center">
+                                        <img src="{{ static_url_for('static', 'images/crypto/coin/litecoin.png') }}" class="w-10" alt="">
+
+                                        <div class="ms-3">
+                                            <p class="font-semibold">Litecoin LTC</p>
+                                            <p class="text-slate-400 text-sm">Dt.25th Nov 24</p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <span class="text-slate-400">$ 20.10</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+
+        </div><!--end grid-->
+    </div><!--end container-->
+
+
+
+    <div class="container relative md:mt-24 mt-16" id="performance_chart_section">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
+            <div class="relative overflow-hidden rounded-lg border border-indigo-600/40 bg-indigo-600/10 lg:ps-12 ps-8 lg:pt-8 pt-6 lg:pb-8 pb-6 lg:me-8">
+                <!-- Chart Section -->
+                <div class="relative h-full">
+                    <div class="flex flex-col mb-2"> <!-- Reduced margin bottom further -->
+                        <p class="text-slate-400 text-xs">Performance since 01/01/2018</p>
+                    </div>
+                    <div style="position: relative; height: calc(100% - 24px);"> <!-- Subtract text height + margin -->
+                        <canvas id="performanceChart" style="height: 350px;"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                    How have we achieved <br> 
+                    <span class="text-sky-500">outperformance?</span>
+                </h3>
+                <p class="text-slate-400 max-w-xl">What is a tradebot assistant?</p>
+    
+                <ul class="list-none text-slate-400 mt-4">
+                    <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Automatically trade for you</li>
+                    <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> It's capability evolves whenever a there is a new release</li>
+                    <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> You can trade by yourself too</li>
+                </ul>
+    
+                <div class="mt-4">
+                    <a href="#pricing_section" class="relative inline-block font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Find Out More <i class="uil uil-angle-right-b align-middle"></i></a>
+                </div>
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+
+    <div class="container relative md:mt-24 mt-16" id="pricing_section">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">Our Pricing Plans</h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">Due to limited seat, we allocate based on people on wait-list for first 50 people</p>
+        </div><!--end grid-->
+
+        <div class="grid grid-cols-1 mt-8 gap-[30px]">
+            <div class="group md:flex items-center justify-between p-6 rounded-lg shadow dark:shadow-gray-700">
+                <div class="lg:flex items-center justify-between lg:w-2/4">
+                    <div class="lg:mb-0 mb-5">
+                        <h5 class="text-2xl font-semibold">Free</h5>
+                        <p class="text-slate-400 lg:w-[200px] md:w-[300px] mt-2">For those who want to know more. Free 60 days trials</p>
+                    </div>
+
+                    <ul class="list-none text-slate-400 md:mb-0 mb-5">
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Paper trading account</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Intelligence level: Basic learning</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Priority upgrade </li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Trial for 90 days</li>
+                    </ul>
+                </div>
+
+                <div class="flex md:mb-0 mb-5">
+                    <span class="text-xl font-semibold">$</span>
+                    <span class="price text-4xl font-semibold mb-0">0</span>
+                    <span class="text-xl font-semibold self-end mb-1">/mo</span>
+                </div>
+                <a href="https://getwaitlist.com/waitlist/12696"
+                   target="_blank"
+                   class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 border-gray-100 dark:border-gray-800 hover:border-indigo-700 dark:hover:border-indigo-700 text-white rounded-full focus:outline-none">
+                   Join wait-list
+                </a>
+
+            </div><!--end content-->
+
+            <div class="group md:flex items-center justify-between p-6 rounded-lg shadow dark:shadow-gray-700">
+                <div class="lg:flex items-center justify-between lg:w-2/4">
+                    <div class="lg:mb-0 mb-5">
+                        <h5 class="text-2xl font-semibold">Standard</h5>
+                        <p class="text-slate-400 lg:w-[200px] md:w-[300px] mt-2">For passive income holders. Make time as your friend, not your enemy</p>
+                    </div>
+
+                    <ul class="list-none text-slate-400 md:mb-0 mb-5">
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> All the above-mentioned </li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Intelligence level: Deep learning I</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> AI assisted trading </li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Exclusive Arbitrage Opportunity</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Multiple Exchanges</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Free update for new functions</li>
+
+                    </ul>
+                </div>
+
+                <div class="flex md:mb-0 mb-5">
+<!--                    <span class="text-xl font-semibold">$</span>-->
+<!--                    <span class="price text-4xl font-semibold mb-0">to be announced</span>-->
+                    <span class="text-xl font-semibold self-end mb-1">to be announced</span>
+                </div>
+
+                <a href="https://getwaitlist.com/waitlist/12696"
+                   target="_blank"
+                   class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 border-gray-100 dark:border-gray-800 hover:border-indigo-700 dark:hover:border-indigo-700 text-white rounded-full focus:outline-none">
+                   Join wait-list
+                </a>
+            </div><!--end content-->
+
+            <div class="group md:flex items-center justify-between p-6 rounded-lg shadow dark:shadow-gray-700">
+                <div class="lg:flex items-center justify-between lg:w-2/4">
+                    <div class="lg:mb-0 mb-5">
+                        <h5 class="text-2xl font-semibold">Professional</h5>
+                        <p class="text-slate-400 lg:w-[200px] md:w-[300px] mt-2">For Developers who want to automate the process or more. *Free public email domains is not permitted.</p>
+                    </div>
+
+                    <ul class="list-none text-slate-400 md:mb-0 mb-5">
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> All of the above </li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Intelligence level: Deep learning II</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Specially for traders/developer</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> API, LLM interaction</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> More detail to be announced</li>
+                    </ul>
+                </div>
+
+                <div class="flex md:mb-0 mb-5">
+<!--                    <span class="text-xl font-semibold">$</span>-->
+<!--                    <span class="price text-4xl font-semibold mb-0">to be announced</span>-->
+                    <span class="text-xl font-semibold self-end mb-1">to be announced</span>
+                </div>
+
+                <a href="https://getwaitlist.com/waitlist/12696"
+                   target="_blank"
+                   class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 border-gray-100 dark:border-gray-800 hover:border-indigo-700 dark:hover:border-indigo-700 text-white rounded-full focus:outline-none">
+                   Join wait-list
+                </a>
+            </div>
+
+            <div class="group md:flex items-center justify-between p-6 rounded-lg shadow dark:shadow-gray-700">
+                <div class="lg:flex items-center justify-between lg:w-2/4">
+                    <div class="lg:mb-0 mb-5">
+                        <h5 class="text-2xl font-semibold">Enterprise</h5>
+                        <p class="text-slate-400 lg:w-[200px] md:w-[300px] mt-2">For enterprises who want to expand their user base.</p>
+                    </div>
+
+                    <ul class="list-none text-slate-400 md:mb-0 mb-5">
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> All of the above </li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Intelligence level: Deep learning II</li>
+                        <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> Mass deployment</li>
+                    </ul>
+                </div>
+
+                <div class="flex md:mb-0 mb-5">
+<!--                    <span class="text-xl font-semibold">$</span>-->
+<!--                    <span class="price text-4xl font-semibold mb-0">to be announced</span>-->
+                    <span class="text-xl font-semibold self-end mb-1">contact Sales</span>
+                </div>
+
+                <a href="https://t.me/aiartinc"
+                   target="_blank"
+                   class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 border-gray-100 dark:border-gray-800 hover:border-indigo-700 dark:hover:border-indigo-700 text-white rounded-full focus:outline-none">
+                   Contact us
+                </a>
+            </div>
+            <!--end content-->
+        </div><!--end-->
+
+    </div><!--end container-->
+
+    <div class="container relative md:mt-24 mt-16" id="register_section">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">How to register</h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">Due to limited seat, we allocate based on people on wait-list for first 50 people</p>
+        </div><!--end grid-->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                src="https://www.youtube.com/embed/S2q7khMfufo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+    </section>
+<!-- End -->
+
+<!-- Add Chart.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Add the data first -->
+<script>
+    window.chartData = {{ chart_data | tojson | safe }};
+</script>
+<!-- Performance chart script -->
+<script src="{{ static_url_for('static', 'dist/js/performance_chart.js') }}"></script>
+<!-- JAVASCRIPTS -->
+
+{% endblock %}

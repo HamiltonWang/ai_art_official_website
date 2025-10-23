@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block scripts %}
+<script src="{{ static_url_for('static', 'js/index.js') }}"></script>
+{% endblock %} {% block page %}
+
+
+        <!-- Start Hero -->
+        <section style="background-image: url('static/images/services.jpg');" class="relative table w-full py-32 lg:py-40 bg-gray-50 dark:bg-slate-800  bg-no-repeat bg-center bg-cover">
+            <div class="absolute inset-0 bg-black opacity-75"></div>
+            <div class="container relative">
+                <div class="grid grid-cols-1 text-center mt-10">
+                    <h3 class="text-3xl leading-normal font-semibold">Privacy Policy</h3>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div class="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+                <ul class="tracking-[0.5px] mb-0 inline-block">
+                    <li class="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out hover:text-indigo-600"><a href="https://aiart.io">AI Art</a></li>
+                    <li class="inline-block text-base text-slate-950 dark:text-white mx-0.5 ltr:rotate-0 rtl:rotate-180"><i class="uil uil-angle-right-b"></i></li>
+                    <li class="inline-block uppercase text-[13px] font-bold text-indigo-600" aria-current="page">Privacy</li>
+                </ul>
+            </div>
+        </section><!--end section-->
+        <div class="relative">
+            <div class="shape absolute sm:-bottom-px -bottom-[2px] start-0 end-0 overflow-hidden z-1 text-white dark:text-slate-900">
+                <svg class="w-full h-auto scale-[2.0] origin-top" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start Terms & Conditions -->
+        <section class="relative md:py-24 py-16">
+            <div class="container relative">
+                <div class="md:flex justify-center">
+                    <div class="md:w-3/4">
+                        <div class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-md">
+                            <h4 class="text-xl font-semibold mb-4">Your Privacy is Important to Us :</h4>
+                            <p class="text-sm font-semibold mb-1">LAST UPDATED: 2025/05/28</p>
+                            <p class="text-slate-400">
+                                Your privacy is extremely important to us! When you participate in AI Art, your personal information is shared only with the local site team.
+                                Your responses to surveys, outcomes from the samples we take, e-mails, and program results – “research data” – are anonymous to our best effort if it is carried out in https://www.aiart.io.
+                            </p>
+
+                            <h5 class="text-xl font-semibold mb-4 mt-8">We use your information to :</h5>
+                            <ul class="list-none text-slate-400 mt-4">
+                                <li class="flex mt-2"><i class="uil uil-arrow-right text-indigo-600 text-lg align-middle me-2"></i>Writing e-mail to you for major system/app update and security notices.</li>
+                                <li class="flex mt-2"><i class="uil uil-arrow-right text-indigo-600 text-lg align-middle me-2"></i>Storing your personal preference for easy log-in in the future.</li>
+                                <li class="flex mt-2"><i class="uil uil-arrow-right text-indigo-600 text-lg align-middle me-2"></i>We DO NOT share your information with any external agencies.</li>
+                            </ul>
+
+                        </div>
+                    </div><!--end -->
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Terms & Conditions -->
+
+
+{% endblock %}

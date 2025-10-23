@@ -1,0 +1,23 @@
+kind: pipeline
+type: docker
+name: default
+
+trigger:
+  ref:
+    - refs/tags/release-*
+    - refs/tags/stage-*
+
+steps:
+  - name: build-and-push
+    image: plugins/docker
+    settings:
+      registry: 192.168.1.5:5000
+      repo: 192.168.1.5:5000/ai_art_landing
+      tags: ${DRONE_TAG}
+      insecure: true 
+      dockerfile: Dockerfile
+      # If you need build arguments:
+      # build_args:
+      #   - ARG_NAME=value
+      cache_from:
+        - 192.168.1.5:5000/python:3.9.18-slim
