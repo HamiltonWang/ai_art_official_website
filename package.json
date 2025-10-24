@@ -1,40 +1,33 @@
 {
   "name": "ai_art_landing",
   "version": "0.0.1",
-  "main": "gulpfile.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "poetry-config": "poetry config --list",
-    "poetry-project-first-time": "poetry env use python3",
-    "poetry-env-dir": "poetry env info --path",
-    "poetry-env-all": "poetry env list",
-    "install-pkg": "poetry add requests beautifulsoup4",
-    "poetry-install-pkg2": "poetry add requests==2.25.1 \"beautifulsoup4<4.10\"",
-    "poetry-remove-pkg": "poetry remove requests",
-    "watch": "npx tailwindcss -i ./src/styles.scss -o ./src/styles.css --watch",
+    "build": "npm run compile",
     "compile": "npm-run-all sass vendor_copy vendor_json vendor_bundle_css vendor_bundle_js vendor_minify_css vendor_minify_js",
-    "sass": "./node_modules/.bin/sass ./ai_art_landing/static/scss/tailwind.scss > ./ai_art_landing/static/css/base.css",
+    "sass": "./node_modules/.bin/sass ./ai_art_landing/static/scss/tailwind.scss ./ai_art_landing/static/css/base.css",
     "vendor_copy": "node -e \"require('./package.json').vendor.forEach((file) => require('fs').copyFileSync(file, './ai_art_landing/static/vendor/'+file.split('/').pop()))\"",
     "vendor_json": "node -e \"require('fs').writeFileSync('./ai_art_landing/static/vendor.json', JSON.stringify(require('./package.json').bundle))\"",
     "vendor_bundle_css": "node -e \"require('concat')(require('./package.json').bundle.css.map(a => 'ai_art_landing/static/'+a), './ai_art_landing/static/bundle.css')\"",
     "vendor_bundle_js": "node -e \"require('concat')(require('./package.json').bundle.js.map(a => 'ai_art_landing/static/'+a),'./ai_art_landing/static/bundle.js')\"",
     "vendor_minify_css": "./node_modules/.bin/minify ./ai_art_landing/static/bundle.css > ./ai_art_landing/static/bundle.min.css",
-    "vendor_minify_js": "./node_modules/.bin/minify ./ai_art_landing/static/bundle.js > ./ai_art_landing/static/bundle.min.js"
+    "vendor_minify_js": "./node_modules/.bin/minify ./ai_art_landing/static/bundle.js > ./ai_art_landing/static/bundle.min.js",
+    "watch": "npx tailwindcss -i ./src/styles.scss -o ./src/styles.css --watch"
   },
   "author": "hamilton",
   "license": "ISC",
-  "description": "",
+  "description": "AI Art Landing Page",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
     "autoprefixer": "^10.4.2",
-    "browser-sync": "^2.26.7",
     "clean-css": "^5.3.2",
     "concat": "^1.0.3",
-    "del": "4.1.1",
     "minify": "^9.2.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.14",
     "prettier": "^3.2.5",
-    "pyright": "1.1.289",
     "sass": "^1.60.0",
     "tailwindcss": "^3.4.1"
   },
