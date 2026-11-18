@@ -43,6 +43,7 @@ The Node/npm files in the root are leftover build tooling from two merged starte
 │   └── logger.py               # Loguru + Uvicorn logging setup
 ├── Dockerfile                  # Production Python 3.9 + Poetry container image
 ├── docker-compose.yml          # Local/server container config (maps 8080 -> 5000)
+├── deploy.sh                   # Builds, starts detached container & prunes dangling images
 └── pyproject.toml              # Python dependencies & `ai_art_landing` CLI script
 ```
 
@@ -62,6 +63,8 @@ Open `http://127.0.0.1:5000`.
 ### Option 2: Docker Compose
 
 ```bash
+./deploy.sh
+# or directly:
 docker compose up -d --build
 ```
 
